@@ -28,10 +28,10 @@ export default {
     }
   },
   head () {
-    const title =
+    const item =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
-      title
+      item
     }
   }
 }

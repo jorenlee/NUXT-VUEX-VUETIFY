@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const mutations = {
   init(state) {
-    state.tasks = JSON.parse(localStorage.getItem('_tasks_')) || [] || [
+    state.tasks = [
       {id: 1, item: 'create skeleton of todo', done: true},
       {id: 2, item: 'add ability to add tasks', done: true},
       {id: 3, item: 'clear task name after clicking "Add"', done: false},
